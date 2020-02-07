@@ -1,3 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: hsl(229, 6%, 66%);
+    background-color: hsl(0, 0%, 98%);
+}
+
+#container {
+    max-width: 500px;
+    width: calc(100% - 40px);
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Top section */
+#topDiv {
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+#title {
+    color: hsl(234, 12%, 34%);
+    font-weight: 200;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+/* Card styling */
+#cardHolder {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.card {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 30px;
+    height: 220px;
+    max-width: 280px;
+    position: relative;
+    box-shadow: 0px 5px 23px -12px rgba(76,78,97,0.75);
+    text-align: left;
+}
+
+.card:last-of-type {
+    margin-bottom: 0;
+}
+
+#card0 {
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+
+#card1 {
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+
+#card2 {
+    border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+#card3 {
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+.cardTitle {
+    margin: 0;
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.cardDescription {
+    margin-top: 5px;
+}
+
+.cardIcon {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+#cardStack {
+    margin-bottom: 30px;
+}
+
+/* Responsiveness */
+@media(min-width: 1250px) {
+    #container {
+        max-width: unset;
+        width: 90%;
+    }
+
+    #title {
+        font-size: 36px;
+    }
+
+    .card {
+        display: inline-block;
+        transform: translateY(-50%);
+    }
+
+    #cardStack > .card {
+        display: block;
+        transform: translateY(0);
+    }
+
+    #cardStack {
+        display: inline-block;
+        margin: 0 30px;
+    }
+}
+
 
 /* Attribution */
 .attribution { font-size: 11px; text-align: center; }
