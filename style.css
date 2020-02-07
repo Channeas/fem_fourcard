@@ -27,10 +27,15 @@ body {
     font-weight: 200;
     font-size: 24px;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .bold {
     font-weight: 600;
+}
+
+#description {
+    margin-top: 10px;
 }
 
 /* Card styling */
@@ -41,15 +46,17 @@ body {
 
 .card {
     background-color: #FFF;
-    border-radius: 10px;
     padding: 30px;
     margin: auto;
     margin-bottom: 30px;
-    height: 220px;
+    height: 200px;
     max-width: 280px;
     position: relative;
     box-shadow: 0px 5px 23px -12px rgba(76,78,97,0.75);
     text-align: left;
+    border: none;
+    border-top: 5px solid;
+    border-radius: 5px;
 }
 
 .card:last-of-type {
@@ -57,19 +64,19 @@ body {
 }
 
 #card0 {
-    border-top: 3px solid hsl(180, 62%, 55%);
+    border-color: hsl(180, 62%, 55%);
 }
 
 #card1 {
-    border-top: 3px solid hsl(0, 78%, 62%);
+    border-color: hsl(0, 78%, 62%);
 }
 
 #card2 {
-    border-top: 3px solid hsl(34, 97%, 64%);
+    border-color: hsl(34, 97%, 64%);
 }
 
 #card3 {
-    border-top: 3px solid hsl(212, 86%, 64%);
+    border-color: hsl(212, 86%, 64%);
 }
 
 .cardTitle {
